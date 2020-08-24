@@ -7824,7 +7824,7 @@ p {
   margin-bottom: 25px; }
 
 #home-section {
-  background: url(../img/header-bg.jpg);
+  background: url(../img/friendship.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -7859,7 +7859,7 @@ p {
 #home-section h3 {
   font-size: 20px;
   color: white;
-  background-color: rgba(101, 102, 102, 0.7); }
+  background-color: rgba(101, 102, 102, 0.9); }
 
 #opleiding,
 #werk {

@@ -34,7 +34,7 @@ p {
 }
 
 #home-section {
-    background: url(../img/header-bg.jpg);
+    background: url(../img/friendship.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -68,13 +68,13 @@ p {
 #home-section h1 {
     font-size: 80px;
     color: white;
-    background-color: rgba($color: #024053, $alpha:0.3);
+    background-color: rgba($color: #024053, $alpha: 0.3);
 }
 
 #home-section h3 {
     font-size: 20px;
     color: white;
-    background-color: rgba($color: #656666, $alpha:0.7);
+    background-color: rgba($color: #656666, $alpha: 0.9);
 }
 
 #opleiding,
@@ -110,14 +110,11 @@ p {
     color: white;
 }
 
-
 #opleiding,
 #werk,
 #softskills h5 {
     color: #024053;
-    ;
 }
-
 
 // .button:hover {
 //     background-color: #555555;
