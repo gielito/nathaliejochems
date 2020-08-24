@@ -1,0 +1,125 @@
+// 1: overrides van default bootstrap voorkeuren
+$blue: white;
+//
+// 2: laden van bootstrap (en compilen)
+@import "bootstrap/bootstrap";
+
+//
+// 3: eigen code:
+body {
+    background-color: #ffffff;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 12px;
+    color: #555;
+}
+
+.navbar {
+    opacity: 0.9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+}
+
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+#home-section {
+    background: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 600px;
+    text-align: center;
+    background-position: center;
+}
+
+#home-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 600px;
+    /* background: rgba(0, 0, 0, 0.5); */
+}
+
+#home-section .home-inner {
+    padding-top: 450px;
+}
+
+.parallax {
+    background-image: url("../img/header-bg.jpg");
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home-section h1 {
+    font-size: 80px;
+    color: white;
+    background-color: rgba($color: #024053, $alpha:0.3);
+}
+
+#home-section h3 {
+    font-size: 20px;
+    color: white;
+    background-color: rgba($color: #656666, $alpha:0.7);
+}
+
+#opleiding,
+#werk {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#blauw-vlak {
+    background: #024053;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: white;
+}
+
+#blauw-vlak i {
+    color: white;
+    font-size: 20px;
+    padding-right: 8px;
+    vertical-align: middle;
+}
+
+#softskills {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: #555;
+    background-color: white;
+}
+
+#contact {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: white;
+}
+
+
+#opleiding,
+#werk,
+#softskills h5 {
+    color: #024053;
+    ;
+}
+
+
+// .button:hover {
+//     background-color: #555555;
+//     color: white;
+// }
