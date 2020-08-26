@@ -8,7 +8,7 @@ $blue: white;
 // 3: eigen code:
 body {
     background-color: #ffffff;
-    font-family: "Lato";
+    font-family: "Raleway";
     font-weight: 300;
     font-size: 12px;
     color: #555;
@@ -29,10 +29,22 @@ h6 {
 }
 
 p {
-    line-height: 28px;
+    line-height: 15px;
     margin-bottom: 25px;
 }
 
+#contact {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: white;
+}
+
+.mt {
+    margin-top: 5rem;
+}
+
+
+/*
 #home-section {
     background: url(../img/friendship.jpg);
     background-repeat: no-repeat;
@@ -49,14 +61,14 @@ p {
     left: 0;
     width: 100%;
     min-height: 600px;
-    /* background: rgba(0, 0, 0, 0.5); */
+    /* background: rgba(0, 0, 0, 0.5); 
 }
 
 #home-section .home-inner {
     padding-top: 450px;
 }
 
-.parallax {
+.coverimage {
     background-image: url("../img/header-bg.jpg");
     height: 600px;
     background-attachment: fixed;
@@ -84,10 +96,10 @@ p {
 }
 
 #blauw-vlak {
-    background: #024053;
-    padding-top: 40px;
+    background: #ffffff;
+    padding-top: 100px;
     padding-bottom: 40px;
-    color: white;
+    color: #555;
 }
 
 #blauw-vlak i {
@@ -97,17 +109,12 @@ p {
     vertical-align: middle;
 }
 
+
 #softskills {
-    padding-top: 40px;
+    padding-top: 100px;
     padding-bottom: 20px;
     color: #555;
     background-color: white;
-}
-
-#contact {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    color: white;
 }
 
 #opleiding,
@@ -120,3 +127,4 @@ p {
 //     background-color: #555555;
 //     color: white;
 // }
+*/

@@ -7802,7 +7802,7 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 body {
   background-color: #ffffff;
-  font-family: "Lato";
+  font-family: "Raleway";
   font-weight: 300;
   font-size: 12px;
   color: #555; }
@@ -7820,76 +7820,98 @@ h6 {
   font-weight: 300; }
 
 p {
-  line-height: 28px;
+  line-height: 15px;
   margin-bottom: 25px; }
-
-#home-section {
-  background: url(../img/friendship.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  min-height: 600px;
-  text-align: center;
-  background-position: center; }
-
-#home-section .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 600px;
-  /* background: rgba(0, 0, 0, 0.5); */ }
-
-#home-section .home-inner {
-  padding-top: 450px; }
-
-.parallax {
-  background-image: url("../img/header-bg.jpg");
-  height: 600px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-#home-section h1 {
-  font-size: 80px;
-  color: white;
-  background-color: rgba(2, 64, 83, 0.3); }
-
-#home-section h3 {
-  font-size: 20px;
-  color: white;
-  background-color: rgba(101, 102, 102, 0.9); }
-
-#opleiding,
-#werk {
-  padding-top: 40px;
-  padding-bottom: 20px; }
-
-#blauw-vlak {
-  background: #024053;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  color: white; }
-
-#blauw-vlak i {
-  color: white;
-  font-size: 20px;
-  padding-right: 8px;
-  vertical-align: middle; }
-
-#softskills {
-  padding-top: 40px;
-  padding-bottom: 20px;
-  color: #555;
-  background-color: white; }
 
 #contact {
   padding-top: 40px;
   padding-bottom: 40px;
   color: white; }
 
+.mt {
+  margin-top: 5rem; }
+
+/*
+#home-section {
+    background: url(../img/friendship.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 600px;
+    text-align: center;
+    background-position: center;
+}
+
+#home-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 600px;
+    /* background: rgba(0, 0, 0, 0.5); 
+}
+
+#home-section .home-inner {
+    padding-top: 450px;
+}
+
+.coverimage {
+    background-image: url("../img/header-bg.jpg");
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home-section h1 {
+    font-size: 80px;
+    color: white;
+    background-color: rgba($color: #024053, $alpha: 0.3);
+}
+
+#home-section h3 {
+    font-size: 20px;
+    color: white;
+    background-color: rgba($color: #656666, $alpha: 0.9);
+}
+
+#opleiding,
+#werk {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#blauw-vlak {
+    background: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    color: #555;
+}
+
+#blauw-vlak i {
+    color: white;
+    font-size: 20px;
+    padding-right: 8px;
+    vertical-align: middle;
+}
+
+
+#softskills {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    color: #555;
+    background-color: white;
+}
+
 #opleiding,
 #werk,
 #softskills h5 {
-  color: #024053; }
+    color: #024053;
+}
+
+// .button:hover {
+//     background-color: #555555;
+//     color: white;
+// }
+*/
