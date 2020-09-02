@@ -7828,6 +7828,13 @@ p {
   padding-bottom: 40px;
   color: white; }
 
+i {
+  color: #555; }
+
+a:hover {
+  color: #555;
+  text-decoration: underline; }
+
 .mt {
   margin-top: 200px; }
 

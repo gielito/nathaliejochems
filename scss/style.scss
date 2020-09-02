@@ -33,10 +33,21 @@ p {
     /* margin-bottom: 5px;*/
 }
 
+
 #contact {
     padding-top: 40px;
     padding-bottom: 40px;
     color: white;
+}
+
+i {
+    color: #555;
+}
+
+
+a:hover {
+    color: #555;
+    text-decoration: underline;
 }
 
 .mt {
@@ -51,8 +62,6 @@ p {
     font-weight: bold;
     color: orangered;
 }
-
-
 
 /*
 
