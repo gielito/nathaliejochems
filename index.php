@@ -2,6 +2,7 @@
 
 
 <?php include('includes/header.php'); ?>
+<?php include('includes/Database.php'); ?>
     
 <?php if ($keuze=='overmij'){include('overmij.php');}?>
 <?php if ($keuze=='hoehelpenwejou'){include('hoehelpenwejou.php');}?>

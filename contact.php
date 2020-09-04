@@ -15,14 +15,14 @@
                             2300 Turnhout</p>
                             <p>Tel +32 497/54 36 66</p>
                            
-                                <p id="socialicons">
-                                        <a style="color: #555" href="https://www.linkedin.com/in/fancoach/"><i
+                                <p>
+                                        <a style="color: #555; padding-right:0.5em;" href="https://www.linkedin.com/in/fancoach/"><i
                                                     class="fa fa-linkedin fa-lg"></i></a>
 
-                                        <a style="color: #555" href="https://www.facebook.com/fancoach.org/"><i
+                                        <a style="color: #555; padding-right:0.5em;" href="https://www.facebook.com/fancoach.org/"><i
                                                 class="fa fa-facebook fa-lg"></i></a>
 
-                                        <a style="color: #555" href="https://www.instagram.com/nathaliejochems"><i
+                                        <a style="color: #555; padding-right:0.5em;" href="https://www.instagram.com/nathaliejochems"><i
                                                 class="fa fa-instagram  fa-lg"></i></a>
                                 </p>
                     </div>
@@ -50,7 +50,7 @@
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                             <div class="submit-button text-center">
-                                                <button class="btn btn-common" id="submit" type="submit">Send Message</button>
+                                                <button class="btn btn-success btn-sm" id="submit" type="submit">Send Message</button>
                                                 <div id="msgSubmit" class="h3 text-center hidden"></div> 
                                                 <div class="clearfix"></div> 
                                             </div>
