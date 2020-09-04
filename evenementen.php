@@ -1,5 +1,5 @@
 
- 
+
  
 
 
@@ -10,52 +10,44 @@
                 <div class="row">
                
 
-                        <!-- INSCHRIJVING FORMULIER EVENEMENTEN -->
+                        <!-- INSCHRIJVING FORMULIER EVENEMENTEN--> 
                       
-                        <h1>Vul hier je gegevens in om je in te schrijven op een van onze evenementen:</h1>
-                
-                    
-                        <h2>Vul hier uw gegevens in</h2>
-                        <form action="persoonlijk.php" method="post">
-                        <table>
-                            <tr>
-                            <td>Naam:</td>
-                            <td><input name="naam" type="text" value="<?php print $naam; ?>" /></td>
-                            </tr>
+                        <h2>Vul hier je gegevens in om je in te schrijven op een van onze evenementen:</h2>
+                        <h3>Vul hier uw gegevens in</h3>
+                     
 
-                            <tr>
-                            <td>Achternaam:</td>
-                            <td><input name="naam" type="text" value="<?php print $achternaam; ?>" /></td>
-                            </tr>
-                        
-                            <tr>
-                            <td>Geslacht:</td>
-                            <td><label><input name="geslacht" type="radio" value="m" <?php if ($Geslacht == "m") print "checked=\"checked\""; ?> />Man</label>
-                                <label><input type="radio" name="geslacht" value="f" <?php if ($Geslacht == "f") print "checked=\"checked\""; ?> />Vrouw</label>
-                            </td>
-                            </tr>
+                       
+                        <?php
 
-                            <tr>
-                            <td>Ik wil me inschrijven voor dit evenement:</td>
-                            <td>
-                                <select name="evenement">
-                                <option value="Geen" <?php if ($evenement == "Geen") print "selected=\"selected\""; ?>>Geen</option>
-                                <option value="event1" <?php if ($evenement == "event1") print "selected=\"selected\""; ?>>event1</option>
-                                <option value="event2" <?php if ($evenement == "event2") print "selected=\"selected\""; ?>>event2</option>
-                                <option value="event3" <?php if ($evenement == "event3") print "selected=\"selected\""; ?>>event3</option>
-                                </select>
-                            </td>
-                            </tr>
-                            <tr>
-                            <td valign="top">Opmerking:</td>
-                            <td><textarea name="opmerking"><?php print $opmerking; ?></textarea></td>
-                            </tr>
-                            <tr>
-                            <td><input name="actie" type="hidden" value="controle" /></td>
-                            <td><input name="" type="submit" value="Verzenden" /></td>
-                            </tr>
-                        </table>
-                        </form>
+
+//if(isset($_POST['verzenden']))
+ // {
+     if($_SERVER["REQUEST_METHOD"] == "POST"){
+    $sVoornaam        =    addslashes($_POST['voornaam']);
+    $sAchternaam      =    addslashes($_POST['achternaam']);
+    
+    mysqli_query("INSERT INTO formulierEvents (voornaam, achternaam) VALUES ('".$sVoornaam."', '".$sAchternaam."')") or die (mysql_error("error: " .mysql_error()));
+
+    echo 'Je gegevens zijn succesvol in de database geplaatst';
+     }
+ // }
+//else
+//  {
+?>
+
+                        <form action=" <?$_SERVER['PHP_SELF']?> " method="POST">
+                            Voornaam: <input type="text" name="voornaam"><br />
+                            Achternaam: <input type="text" name="achternaam"><br />
+                            <input type="submit" name="verzenden" value="verzenden">
+                        </form>               
+                </div>
+            </div>
+        </div>
+    </section>
+<?
+ // }
+?>
+                     
 
                  
 

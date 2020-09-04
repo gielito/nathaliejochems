@@ -4,13 +4,13 @@
 <?php include('includes/header.php'); ?>
 <?php include('includes/Database.php'); ?>
     
-<?php if ($keuze=='overmij'){include('overmij.php');}?>
-<?php if ($keuze=='hoehelpenwejou'){include('hoehelpenwejou.php');}?>
-<?php if ($keuze=='evenementen'){include('evenementen.php');}?>
-<?php if ($keuze=='blog'){include('blog.php');}?>
-<?php if ($keuze=='galerij'){include('galerij.php');}?>
-<?php if ($keuze=='boeken'){include('boeken.php');}?>
-<?php if ($keuze=='contact'){include('contact.php');}?>
+<?php if (isset ($_GET['link'])){if($keuze=='overmij'){include('overmij.php');}}?>
+<?php if (isset ($_GET['link'])){if($keuze=='hoehelpenwejou'){include('hoehelpenwejou.php');}}?>
+<?php if (isset ($_GET['link'])){if($keuze=='evenementen'){include('evenementen.php');}}?>
+<?php if (isset ($_GET['link'])){if($keuze=='blog'){include('blog.php');}}?>
+<?php if (isset ($_GET['link'])){if($keuze=='galerij'){include('galerij.php');}}?>
+<?php if (isset ($_GET['link'])){if($keuze=='boeken'){include('boeken.php');}}?>
+<?php if (isset ($_GET['link'])){if($keuze=='contact'){include('contact.php');}}?>
 
    
 
