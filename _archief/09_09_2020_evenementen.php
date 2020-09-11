@@ -20,11 +20,14 @@
                             if($database->query($query)){$registratie=true;}
            
                             }
+                        // }
+                        //else
+                        //  {
                         ?>
 
 
                         
-                     <div class="container bg-light p-3">
+            <div class="container bg-light">
                         <form action=" <?$_SERVER['PHP_SELF']?> " method="POST">
                             <div class="form-group">
                                 <div class="row">
@@ -35,18 +38,16 @@
                                         <input type="text" name="voornaam">
                                     </div>
                                 </div>
-
                                 <div class="row">
-                                    <div class="col-md-3 my-1">
+                                <div class="col-md-3 my-1">
                                         <label for="achternaam">Achternaam:</label> 
                                     </div>
                                     <div class="col-md-3 my-1">
                                         <input type="text" name="achternaam">
                                     </div>
                                 </div>
-
                                 <div class="row">
-                                    <div class="col-md-3 my-1">
+                                <div class="col-md-3 my-1">
                                         <label for="evenement"> Evenement:</label> 
                                     </div>
                                     <div class="col-md-3 my-1">
@@ -60,23 +61,28 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-6 my-1">
-                                        <button class="btn btn-primary btn-sm"  type="submit" name="verzenden" value="verzenden">Verzenden</button>
+                                <div><button class="btn btn-primary btn-sm"  type="submit" name="verzenden" value="verzenden">Verzenden</button>
 
-                                        <?php  if ($registratie==true){echo '<div class="alert alert-success mt-3" role="alert">
-                                        Je gegevens zijn succesvol geregistreerd!
-                                        </div>'; } ?>
-                                    </div>
-                                </div>
+                             <?php  if ($registratie==true){echo '<div class="alert alert-success" role="alert">
+                            Je gegevens zijn succesvol geregistreerd!
+                        </div>'; } ?>
+                               </div>
                             </div>
                         </form>  
-                      </div>
-<!-- EINDE INSCHRIJVING FORMULIER EVENEMENTEN -->
+                        
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+<?
+ // }
+?>
+                     
 
+                        <!-- EINDE INSCHRIJVING FORMULIER EVENEMENTEN -->
 
- <!-- start lijst EVENEMENTEN -->
-                        <?php
+        <?php
                 $lijst=$database->query("SELECT * FROM evenementen WHERE actief=1");
                 //var_dump($lijst);
                 //var_dump (mysqli_fetch_assoc($lijst));
@@ -101,11 +107,8 @@
                         }
 
                     ?>
- <!-- stop lijst EVENEMENTEN -->
-               </div>
+
+                </div>
             </div>
         </div>
     </section>
-              
-
-

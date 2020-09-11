@@ -1,7 +1,7 @@
     <!--Boeken-->
     <section id="boeken" name="boeken">
         <div class="py-5">
-            <div class="container">
+            <div class="container mt-5">
                 <h2>Boeken</h2>
                 <hr>
                 <h5>Zelfontwikkeling</h5>

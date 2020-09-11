@@ -1,7 +1,7 @@
   <!--Galerij?-->
   <section id="galerij" name="galerij">
         <div class="py-5">
-            <div class="container">
+            <div class="container mt-5">
                 <h2>Galerij</h2>
                 <div class="row justify-content-md-center">
                     <div class="col-md-9">

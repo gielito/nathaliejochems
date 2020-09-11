@@ -3,7 +3,7 @@
 
     <section id="overmij" name="overmij">
         <div class="py-5">
-            <div class="container">
+            <div class="container mt-5">
                 <div class="row">
                     <div class="col-md-3 col-lg-offset-1">
                         <img src="img/coach_nathalie2.jpg" class="img-fluid mt-2" alt="Nathalie Jochems">
