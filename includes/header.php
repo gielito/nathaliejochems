@@ -39,6 +39,7 @@ if (isset ($_GET['link'])){
                     </li>
                     <li class="nav-item <?php if($keuze=="contact"){echo ' active"';}?>"><a class="nav-link" href="index.php?link=contact" class="nav-link">CONTACT</a>
                     </li>
+          
                   
                 </ul>
 

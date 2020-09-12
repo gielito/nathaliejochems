@@ -14,6 +14,7 @@
 <?php if (isset ($_GET['link'])){if($keuze=='boeken'){include('boeken.php');}}?>
 <?php if (isset ($_GET['link'])){if($keuze=='contact'){include('contact.php');}}?>
 
+
 <main>
     <section id="signup" name="signup">
             <div class="py-5">

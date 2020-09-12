@@ -4,7 +4,7 @@
 
 
 <?php include('includes/header.php'); ?>
-<?php include('includes/Database.php'); ?>
+
     
 <?php if (isset ($_GET['link'])){if($keuze=='overmij'){include('overmij.php');}}?>
 <?php if (isset ($_GET['link'])){if($keuze=='hoehelpenwejou'){include('hoehelpenwejou.php');}}?>
@@ -13,6 +13,7 @@
 <?php if (isset ($_GET['link'])){if($keuze=='galerij'){include('galerij.php');}}?>
 <?php if (isset ($_GET['link'])){if($keuze=='boeken'){include('boeken.php');}}?>
 <?php if (isset ($_GET['link'])){if($keuze=='contact'){include('contact.php');}}?>
+
 
 <main>
     <p>You are logged out!</p>
