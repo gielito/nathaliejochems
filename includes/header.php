@@ -39,6 +39,9 @@ if (isset ($_GET['link'])){
                     </li>
                     <li class="nav-item <?php if($keuze=="contact"){echo ' active"';}?>"><a class="nav-link" href="index.php?link=contact" class="nav-link">CONTACT</a>
                     </li>
+
+                    <li class="nav-item <?php if($keuze=="signup"){echo ' active"';}?>"><a class="nav-link" href="index.php?link=signup" class="nav-link">SIGNUP</a>
+                    </li>
           
                   
                 </ul>
@@ -61,7 +64,7 @@ if (isset ($_GET['link'])){
                     <button type="submit" name="login-submit">Login</button>
                  </form>
 
-                 <a href="signup.php">Signup</a>
+        
 
                  <form action="includes/logout.inc.php" method="post">
                     <button type="submit" name="logout-submit">Logout</button>

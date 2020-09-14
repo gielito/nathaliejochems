@@ -1,11 +1,9 @@
 
-<?php include('includes/Database.php'); ?>
+<?php include('Database.php'); ?>
 
 <?php
 
 if (isset($_POST['signup-submit'])){
-
-        //require 'dbh.inc.php';
         
         $username = $_POST['uid'];
         $email = $_POST['mail'];
@@ -37,35 +35,28 @@ if (isset($_POST['signup-submit'])){
             exit();
         }
         else{
-            $sql = "SELECT uidUsers FROM users WHERE uidUsers=?";
-            $stmt = mysqli_stmt_init($conn);
-            if (!mysqli_stmt_prepare($stmt,$sql)) {
+            $sql = "SELECT uidUsers FROM users WHERE uidUsers='$username';";
+            echo $sql;
+            if (!$result=$database->query($sql)){
                 header("Location: ../signup.php?error=sqlerror");
                 exit();
             }
 
         else {
-            mysqli_stmt_bind_param($stmt, "s" , $username);
-            mysqli_stmt_execute($stmt);
-            mysqli_stmt_store_result($stmt);
-            $resultCheck = mysqli_stmt_num_rows($stmt);
+          
+            $resultCheck = mysqli_num_rows($result);
             if($resultCheck > 0){
                 header("Location: ../signup.php?error=usertaken&mail=".$email);
                 exit();
             }
             else{
-                $sql = "INSERT INTO users (uidUsers, emailUsers, pwdUsers) VALUES (?,?,?)";
-                $stmt = mysqli_stmt_init($conn);
-                if (!mysqli_stmt_prepare($stmt,$sql)) {
+                $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
+                $sql = "INSERT INTO users (uidUsers, emailUsers, pwdUsers) VALUES ('$username','$email','$hashedPwd')";
+                if (!$result=$database->query($sql)){
                     header("Location: ../signup.php?error=sqlerror");
                     exit();
             }
             else {
-
-                $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
-
-                mysqli_stmt_bind_param($stmt, "sss" , $username, $email, $hashedPwd);
-                mysqli_stmt_execute($stmt);
                 header("Location: ../signup.php?signup=success");
                     exit();
             }
@@ -75,8 +66,7 @@ if (isset($_POST['signup-submit'])){
 
     }
 
-    mysqli_stmt_close($stmt);
-    mysqli_close($conn);
+     mysqli_close($database->connection);
 
 }
 

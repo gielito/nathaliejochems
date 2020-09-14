@@ -1,37 +1,26 @@
-<?php include('includes/head.php'); ?>
 
+ <!-- signup-->
+   
 
+    <section id="signup" name="signup">
+        <div class="py-5">
+            <div class="container mt-5">
+                <div class="row">
+                 
+                    <div class="col-md-12">
+                      
+                        <h3>Signup</h3>
+                        <form action="includes/signup.inc.php" method="post">
+                            <input type="text" name="uid" placeholder="Username">
+                            <input type="text" name="mail" placeholder="E-mail">
+                            <input type="password" name="pwd" placeholder="Password">
+                            <input type="password" name="pwd-repeat" placeholder="Repeat password">
+                            <button type="submit" name="signup-submit">Signup</button>
+                        </form>
 
-
-<?php include('includes/header.php'); ?>
-
-    
-<?php if (isset ($_GET['link'])){if($keuze=='overmij'){include('overmij.php');}}?>
-<?php if (isset ($_GET['link'])){if($keuze=='hoehelpenwejou'){include('hoehelpenwejou.php');}}?>
-<?php if (isset ($_GET['link'])){if($keuze=='evenementen'){include('evenementen.php');}}?>
-<?php if (isset ($_GET['link'])){if($keuze=='blog'){include('blog.php');}}?>
-<?php if (isset ($_GET['link'])){if($keuze=='galerij'){include('galerij.php');}}?>
-<?php if (isset ($_GET['link'])){if($keuze=='boeken'){include('boeken.php');}}?>
-<?php if (isset ($_GET['link'])){if($keuze=='contact'){include('contact.php');}}?>
-
-
-<main>
-    <p>You are logged out!</p>
-    <p>You are logged in!</p>
-</main>
-
-<?php include('includes/footer.php'); ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
