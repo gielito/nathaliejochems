@@ -1,5 +1,31 @@
 
-<h5>Sign</h5>
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathalie jochems</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|Raleway:400,300,700"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+
 
 
  <!-- ADMIN -->
@@ -10,77 +36,66 @@
             <div class="container mt-5">
                 <div class="row">
                     <div class="col-md-3 col-lg-offset-1">
-                        <img src="img/coach_nathalie2.jpg" class="img-fluid mt-2" alt="Nathalie Jochems">
+                        <img src="../img/coach_nathalie2.jpg" class="img-fluid mt-2" alt="Nathalie Jochems">
                     </div>
                     <div class="col-md-9">
+                        
+                        <h5>Welkom op de admin pagina</h5>
+                       
 
-                        <h2>Over mij</h2>
-                        <h5>Missie</h5>
+                        <div class="row mt-5"> 
+                        
+                        
+                        <button class="btn btn-outline-primary btn-sm" type="button">
+                        <a href="http://localhost/nathaliejochems/index.php?link=overmij" target="_parent "class="nav-link">Terug naar de website >></a></button>
 
-                        <p>FAN Coaching is ontstaan vanuit passie voor het avontuur en gelijkwaardigheid.
-                            Daar waar gelijkwaardigheid ontbreekt ontstaat het avontuur.</p>
-                        <p>Dat maakt het werken met een team zo boeiend.</p>
+                                    <form action="includes/logout.inc.php" method="post">
+                                 
+                                    <button  type="submit" name="logout-submit">Logout</button>
+                                    </form>
+                            </div>
 
-                        <!-- tekst button hover donker 
-                        <button class="btn btn-outline-light  text-dark" type="button">
-                            <a href="img/cv_tom_gielis_en.pdf" class="nav-link" target="_blank"> DOWNLOAD CV </a>
-                        </button>-->
 
-                        <hr>
-                        <h5>Wie ben ik?</h5>
-                        <p>Als loopbaancoach kijk ik mee naar jouw behoeftes en verlangens. Samen zoeken we naar
-                            handvaten waardoor je weer zelf vorm kunt geven aan je leven.</p>
-
-                        <p>Als intervisor zit ik samen met je team om onderliggende patronen helder te krijgen die
-                            conflicten veroorzaken. Spreken is een kunst, er gaat dus veel focus naar ‘hoe’ spreken
-                            wij
-                            met elkaar.</p>
-
-                        <p>Ik hou ervan om iemand te leren vissen i.p.v. hem of haar een vis aan te reiken.</p>
-
-                        <p>Coaching is de kunst van het vragen stellen. Door mijn vragen laat ik je andere
-                            denkpistes
-                            bewandelen die je tot dan toe nog niet gezien had. Zo ontstaan er nieuwe ideeën waarmee
-                            je
-                            je
-                            loopbaan, je situatie kunt veranderen of net verstevigen.
-                        </p>
 
                         <hr>
-                        <h5>Wat doe ik?</h5>
-                        <p>In 2006 behaalde ik mijn bachelordiploma Sociaal Werk. Mijn werk bij geïnterneerden,
-                            illegalen en personen met een beperking heeft mijn blik op mensen erg verruimd. Door
-                            deze
-                            ervaringen besef ik zeer goed dat iedereen anders is. Als coach stem ik af op de manier
-                            waarop u de de dingen ervaart.</p>
+                        <h6>Wat wil je doen?</h6>
+                        <button class="btn btn-outline-primary btn-sm" type="button">
+                        <a href="../signup.php" target="_parent ">Gebruiker toevoegen >></a></button>
 
-                        <p>
-                            <ul>
-                                <li>Opleiding tot Professionele Coach</li>
-                                <li>Communicatietraining (Diane Keymolen)</li>
-                                <li>Zelfontwikkelde methodiek voor groepscoaching</li>
-                                <li>Zelfontwikkelde Communicatieworkshop</li>
-                                <li>Jaarlopleiding Familieopstellingen (Leren over Leven)</li>
-                                <li>Jaaropleiding Geweldloze Communicatie (Corrylaura van Bladel)</li>
-                            </ul>
-                        </p>
+                        <button class="btn btn-outline-primary btn-sm" type="button">
+                        <a href="../signup.php" target="_parent "class="nav-link">Bekijk evenementen >></a></button>
 
-                        <p>Aanvullende opleidingen:
-                            Werken met seksuele delinquenten (Sensoa),
-                            Passend geven als hulpverlener van parentificatie naar legaat (Leren over Leven)
-                            Omgaan met moeilijke situaties in het sociaal werk (OFO)</p>
+                        <button class="btn btn-outline-primary btn-sm" type="button">
+                        <a href="../signup.php" target="_parent "class="nav-link">Bekijk boek aankopen >></a></button>
 
-                        <p>Aangesloten bij verschillende intervisiegroepen
-                            Op regelmatige basis supervisie.
-                            Ik ben ervan overtuigd dat de beste leerschool bestaat uit ervaringen. Mijn streefdoel
-                            is
-                            daardoor om zoveel mogelijk nieuwe ervaringen op te doen door uitdagingen aan te gaan.
-                            Als Coach sta ik samen met u eventjes stil, maar gaan we daarna op ontdekkingstocht
-                            naar….
-                            datgene wat u zoekt.
-                        </p>
+                        <button class="btn btn-outline-primary btn-sm" type="button">
+                        <a href="../signup.php" target="_parent "class="nav-link">Bekijk evenementen >></a></button>
+                      
+                      
+
+                 
+
+                    
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js "
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous ">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous ">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js "
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous ">
+    </script>
+
+    <script>
+        // Get the current year for the copyright
+        $('#year').text(new Date().getFullYear());
+    </script>
+</body>
+
+</html>

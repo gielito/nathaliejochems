@@ -13,7 +13,7 @@
 <?php if (isset ($_GET['link'])){if($keuze=='galerij'){include('galerij.php');}}?>
 <?php if (isset ($_GET['link'])){if($keuze=='boeken'){include('boeken.php');}}?>
 <?php if (isset ($_GET['link'])){if($keuze=='contact'){include('contact.php');}}?>
-<?php if (isset ($_GET['link'])){if($keuze=='signup'){include('signup.php');}}?>
+
 
 
 

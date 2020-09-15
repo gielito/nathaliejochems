@@ -40,8 +40,7 @@ if (isset ($_GET['link'])){
                     <li class="nav-item <?php if($keuze=="contact"){echo ' active"';}?>"><a class="nav-link" href="index.php?link=contact" class="nav-link">CONTACT</a>
                     </li>
 
-                    <li class="nav-item <?php if($keuze=="signup"){echo ' active"';}?>"><a class="nav-link" href="index.php?link=signup" class="nav-link">SIGNUP</a>
-                    </li>
+                  
           
                   
                 </ul>

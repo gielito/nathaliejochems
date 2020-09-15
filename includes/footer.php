@@ -27,8 +27,6 @@
 
                             <!-- start login/admin -->
 
-                            
-
                             <div class="row mt-5">
                                 <h6>Login Admin</h6>
                                     <form action="includes/login.inc.php" method="post">
@@ -39,13 +37,6 @@
                                     </form>
                             </div>
 
-
-                            <div class="row mt-5">
-                                    <form action="includes/logout.inc.php" method="post">
-                                 
-                                    <button  type="submit" name="logout-submit">Logout</button>
-                                    </form>
-                            </div>
                             <!-- stop login/admin -->
 
 
