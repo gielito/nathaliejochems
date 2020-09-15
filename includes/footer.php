@@ -23,6 +23,33 @@
                                         class="fa fa-instagram  fa-lg"></i></a>
                             </div>
                             <p>Copyright © 2020 Nathalie Jochems</p>
+
+
+                            <!-- start login/admin -->
+
+                            
+
+                            <div class="row mt-5">
+                                <h6>Login Admin</h6>
+                                    <form action="includes/login.inc.php" method="post">
+                                        <input type="text" name="mailuid" placeholder="Username/E-mail...">
+                                        <input type="password" name="pwd" placeholder="Password...">
+                                    
+                                        <button class="mt-1" type="submit" name="login-submit">Login</button>
+                                    </form>
+                            </div>
+
+
+                            <div class="row mt-5">
+                                    <form action="includes/logout.inc.php" method="post">
+                                 
+                                    <button  type="submit" name="logout-submit">Logout</button>
+                                    </form>
+                            </div>
+                            <!-- stop login/admin -->
+
+
+
                         </div>
 
 
@@ -38,7 +65,7 @@
                                 }
 
                                 /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                                We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
                             </style>
                             <style type="text/css">
                                 #mc-embedded-subscribe-form input[type=checkbox] {
@@ -129,7 +156,22 @@
                                                 id="mc-embedded-subscribe" class="button"></div>
                                     </div>
                                 </form>
+
+
+
+
+
+
+
                             </div>
+
+
+
+
+
+
+
+
                             <script type='text/javascript'
                                 src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
                             <script type='text/javascript'>
