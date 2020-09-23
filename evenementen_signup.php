@@ -1,5 +1,4 @@
-
- <!-- signup-->
+ <!-- ADMIN EVENEMENTEN -->
    
 
 
@@ -32,7 +31,7 @@
 
 
 
- <!-- SIGNUP NEW USER-->
+ <!-- ADMIN EVENEMENTEN -->
     <!-- <a name="over-mij"></a> -->
 
     <section id="signup" name="signup">
@@ -42,7 +41,7 @@
                  
                     <div class="col-md-12">
                       
-                        <h5>admin > gebruiker toevoegen</h5>
+                        <h5>admin > evenement toevoegen</h5>
                         <div class="row">   
                             
                             <a href="http://localhost/nathaliejochems/includes/login.inc.php" target="_parent "class="nav-link">Terug naar admin overzicht >></a>
@@ -52,30 +51,48 @@
                         <hr>
 
                         <div class="row mt-4">
-                            <h3>Nieuwe gebruiker toevoegen</h3>
-                            <form action="includes/signup.inc.php" method="post">
-                                <input type="text" name="uid" placeholder="Username">
-                                <input type="text" name="mail" placeholder="E-mail">
-                                <input type="password" name="pwd" placeholder="Password">
-                                <input type="password" name="pwd-repeat" placeholder="Repeat password">
-                                <button type="submit" name="signup-submit">signup</button>
-                        <div>
-                            <?php if($_GET){
-                                $signup=$_GET['signup'];
-                                if ($signup=="success"){
-                                    echo '<div class="alert alert-success mt-3" role="alert">
-                                            Je gegevens zijn succesvol geregistreerd!
-                                            </div>'; } }?>
-                    </div>
-
+                            <h3>Nieuw evenement toevoegen</h3>
+                            <form action="evenementen_signup.inc.php" method="post">
+                                    <input type="date" name="datum" placeholder="Datum">
+                                    <input type="text" name="titel" placeholder="Titel">
+                                    <input type="text" name="omschrijving" placeholder="Omschrijving">
+                                    <input type="text" name="aantalplaatsen" placeholder="Aantalplaatsen">
+                                    <input type="date" name="deadlineinschrijving" placeholder="Deadlineinschrijving">
+                                    <input type="number" name="actief" placeholder="Actief">
+                                
+                                    <button type="submit" name="event-submit">EvenementToevoegen</button>
+                                        <div>
+                                            <?php if($_GET){
+                                                $signupevent=$_GET['EvenementToevoegen'];
+                                                if ($signupevent=="success"){
+                                                    echo '<div class="alert alert-success mt-3" role="alert">
+                                                            Het evenement is succesvol toegevoegd!
+                                                            </div>'; } }?>
+                                        </div>
                             </form>
                         </div>
+
+                        
+
+
+
+
+
+
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+
+
+
+
+
+
+ <!-- END ADMIN EVENEMENTEN -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js "
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous ">
@@ -94,21 +111,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    

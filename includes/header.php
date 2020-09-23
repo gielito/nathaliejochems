@@ -1,7 +1,12 @@
 <?php
+session_start();
+?>
+
+
+<?php
 if (isset ($_GET['link'])){
     $keuze = $_GET['link'];
-}
+    }
 ?>
 
 

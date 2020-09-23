@@ -22,6 +22,81 @@
 
     <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 </head>
+ <!-- juiste login inc code -->
+<?php 
+if(isset($_POST['login-submit']))
+{
+
+    require'dbh.inc.php';
+
+    $mailuid = $_POST['mailuid'];
+    $password= $_POST['pwd'];
+
+    if(empty($mailuid) || empty($password)){
+        header("Location: ../index.php?link=overmij");
+        exit();
+          }
+
+    else {
+                $sql = "SELECT * FROM users WHERE uidUsers=? OR emailUsers=?;";
+                $stmt = mysqli_stmt_init($conn);
+                if (!mysqli_stmt_prepare($stmt, $sql)){
+                    header("Location: ../index.php?error=sqlerror");
+                    exit();
+                }
+                    
+                else {
+                        mysqli_stmt_bind_param($stmt, "ss", $mailuid, $mailuid);
+                        mysqli_stmt_execute($stmt);
+                        $result = mysqli_stmt_get_result($stmt);}
+
+                        if($row = mysqli_fetch_assoc($result))
+                        {
+                            $pwdCheck = password_verify($password, $row['pwdUsers']);
+                            if ($pwdCheck == false)
+                            {
+                                header("Location: ../index.php?error=wrongpwd");
+                                exit();
+                            }
+                            else if($pwdCheck == true) 
+                            {
+                                session_start();
+                                $_SESSION['userId'] = $row['idUsers'];
+                                $_SESSION['userId'] = $row['uidUsers'];
+
+                                header("Location: ../index.php?login=success");
+                                exit();
+                            }
+                            else
+                            {
+                                header("Location: ../index.php?error=wrongpwd");
+                                exit();
+                            }
+                        }  
+                            else {
+                            header("Location: ../index.php?link=overmij");
+                            exit();
+                            }
+                    
+
+          }
+
+  }
+
+
+
+
+?>
+
+
+
+
+
+
+
+
+
+
 
 
 <body>
@@ -45,13 +120,24 @@
 
                         <div class="row mt-5"> 
                         
-                        
-                        <button class="btn btn-outline-primary btn-sm" type="button">
-                        <a href="http://localhost/nathaliejochems/index.php?link=overmij" target="_parent "class="nav-link">Terug naar de website >></a></button>
-
+                        <div class="row mx-2">
+                            <button class="btn btn-outline-primary btn-sm" type="button">
+                            <a href="http://localhost/nathaliejochems/index.php?link=overmij" target="_parent ">Terug naar de website >></a></button>
+                        </div>
                                     <form action="includes/logout.inc.php" method="post">
                                  
-                                    <button  type="submit" name="logout-submit">Logout</button>
+                                    <button  class="btn btn-secondary btn-sm" type="submit" name="logout-submit">
+                                    <a href="http://localhost/nathaliejochems/index.php?link=overmij" target="_parent ">Logout
+                                                                                
+                                            <?php
+                                            // remove all session variables
+                                            session_unset();
+
+                                            // destroy the session
+                                            session_destroy();
+                                            ?>
+                                            </a>
+                                    </button>
                                     </form>
                             </div>
 
@@ -59,17 +145,21 @@
 
                         <hr>
                         <h6>Wat wil je doen?</h6>
-                        <button class="btn btn-outline-primary btn-sm" type="button">
-                        <a href="../signup.php" target="_parent ">Gebruiker toevoegen >></a></button>
+                        <div class="row my-2">
+                            <button class="btn btn-outline-primary btn-sm" type="button">
+                            <a href="../signup.php" target="_parent ">Gebruiker toevoegen >></a></button>
+                        </div>
 
-                        <button class="btn btn-outline-primary btn-sm" type="button">
-                        <a href="../signup.php" target="_parent "class="nav-link">Bekijk evenementen >></a></button>
+                        <div class="row my-2">
+                            <button class="btn btn-outline-primary btn-sm" type="button">
+                            <a href="../evenementen_signup.php" target="_parent ">Evenementen toevoegen >></a></button>
+                        </div>
+                        <div class="row my-2">
+                            <button class="btn btn-outline-primary btn-sm" type="button">
+                            <a href="../evenementen_lijst.php" target="_parent ">Evenementen overzicht >></a></button>
+                        </div>
 
-                        <button class="btn btn-outline-primary btn-sm" type="button">
-                        <a href="../signup.php" target="_parent "class="nav-link">Bekijk boek aankopen >></a></button>
-
-                        <button class="btn btn-outline-primary btn-sm" type="button">
-                        <a href="../signup.php" target="_parent "class="nav-link">Bekijk evenementen >></a></button>
+                  
                       
                       
 

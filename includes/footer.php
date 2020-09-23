@@ -35,9 +35,16 @@
                                     
                                         <button class="mt-1" type="submit" name="login-submit">Login</button>
                                     </form>
+                                  
+                                        <a href="signup.php" class="btn"> Signup</a>
+                                    <form action="includes/logout.inc.php" method="post">
+                                        <button type="submit" name="login-submit">Logout</button>
+                                    </form>
+
                             </div>
 
                             <!-- stop login/admin -->
+
 
 
 
@@ -147,21 +154,7 @@
                                                 id="mc-embedded-subscribe" class="button"></div>
                                     </div>
                                 </form>
-
-
-
-
-
-
-
                             </div>
-
-
-
-
-
-
-
 
                             <script type='text/javascript'
                                 src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
@@ -221,8 +214,6 @@
 
                     </div>
                 </div>
-
-
             </div>
         </div>
 </section>

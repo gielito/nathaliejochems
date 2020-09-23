@@ -4,7 +4,7 @@
             <div class="container mt-5">
                 <div class="row">
 
-                        <!-- INSCHRIJVING FORMULIER EVENEMENTEN--> 
+        <!-- INSCHRIJVING FORMULIER EVENEMENTEN--> 
                         <h4>Vul hier je gegevens in om je in te schrijven op een van onze evenementen:</h4>
                       
                         <?php
@@ -14,9 +14,10 @@
                             if($_SERVER["REQUEST_METHOD"] == "POST"){
                             $sVoornaam        =    ($_POST['voornaam']);
                             $sAchternaam      =    ($_POST['achternaam']);
+                            $sEmail           =    ($_POST['email']);
                             $sEvenement       =    ($_POST['evenement']);
                             
-                            $query="INSERT INTO formulierEvents (voornaam, achternaam, evenement) VALUES ('".$sVoornaam."', '".$sAchternaam."', '".$sEvenement."');" ;
+                            $query="INSERT INTO formulierEvents (voornaam, achternaam, email, evenement) VALUES ('".$sVoornaam."', '".$sAchternaam."', '".$sEmail."', '".$sEvenement."');" ;
                             if($database->query($query)){$registratie=true;}
            
                             }
@@ -42,6 +43,16 @@
                                     </div>
                                     <div class="col-md-3 my-1">
                                         <input type="text" name="achternaam">
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-md-3 my-1">
+                                        <label for="email">E-mail:</label> 
+                                    </div>
+                                    <div class="col-md-3 my-1">
+                                        <input type="text" name="email">
                                     </div>
                                 </div>
 
@@ -97,10 +108,10 @@
                         <p>Aantal plaatsen: <b>'.$aantalplaatsen.'</b></p>
                         <p>Inschrijving mogelijk tem: <b>'.$deadlineinschrijving.'</b></p>
                         <hr>
-                    </div>';
-                        }
-
-                    ?>
+                        </div>';
+                            }
+    
+                        ?>
  <!-- stop lijst EVENEMENTEN -->
                </div>
             </div>
