@@ -26,10 +26,32 @@
                                                 class="fa fa-instagram  fa-lg"></i></a>
                                 </p>
                     </div>
-                            <div class="col-md-9">
-                    <!-- start nieuwe contact form -->
+                    <div class="col-md-9">
+                        <form id="contactForm">
 
-                    <div class="row mt-4">
+
+                            <div class="row mt-4">
+                                <h3>Nieuwe gebruiker toevoegen</h3>
+                                <form action="includes/signup.inc.php" method="post">
+                                    <input type="text" name="uid" placeholder="Username">
+                                    <input type="text" name="mail" placeholder="E-mail">
+                                    <input type="password" name="pwd" placeholder="Password">
+                                    <input type="password" name="pwd-repeat" placeholder="Repeat password">
+                                    <button type="submit" name="signup-submit">signup</button>
+                            <div>
+                                <?php if($_GET){
+                                    $signup=$_GET['signup'];
+                                    if ($signup=="success"){
+                                        echo '<div class="alert alert-success mt-3" role="alert">
+                                                Je gegevens zijn succesvol geregistreerd!
+                                                </div>'; } }?>
+                            </div>
+                        </form>
+                 </div>
+
+ <!-- start nieuwe contact form -->
+
+                        <div class="row mt-4">
                             <h3>Contact</h3>
                                 <form action="includes/signup.inc.php" method="post">
                                     <input type="text" name="voornaam" placeholder="voornaam">
@@ -38,11 +60,60 @@
                                     <input type="text" name="boodschap" placeholder="boodschap">
                                    
                                     <button type="submit" name="signup-submit">signup</button>
-                              
+                                        <div>
+                                        <?php if($_GET){
+                                            $signup=$_GET['signup'];
+                                            if ($signup=="success"){
+                                                echo '<div class="alert alert-success mt-3" role="alert">
+                                                        Je gegevens zijn succesvol geregistreerd!
+                                                        </div>'; } }?>
+                                        </div>
 
                                 </form>
                         </div>
 <!-- einde nieuwe contact form -->
+
+
+
+
+
+
+
+
+
+
+
+                                <!-- originele contact form -->
+                                    <div class="row">
+
+                                        <div class="col-md-9">
+                                            <div class="form-group">
+                    
+                                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+                                                <div class="help-block with-errors"></div>
+                                            </div>                                 
+                                        </div>
+
+                                        <div class="col-md-9">
+                                            <div class="form-group">
+                                                <input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
+                                                <div class="help-block with-errors"></div>
+                                            </div> 
+                                        </div>
+                            
+                                        <div class="col-md-9">
+                                            <div class="form-group"> 
+                                                <textarea class="form-control" id="message" placeholder="Your Message" rows="4" data-error="Write your message" required></textarea>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                            <div class="submit-button text-center">
+                                                <button class="btn btn-success btn-sm" id="submit" type="submit">Send Message</button>
+                                                <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                                                <div class="clearfix"></div> 
+                                            </div>
+                                        </div>
+                                    </div>            
+                                </form>
                             </div>
                     </div>
                 </div>

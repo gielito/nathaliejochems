@@ -3,7 +3,7 @@
 
 <?php
 
-if (isset($_SESSION['userId']) && isset($_POST['signup-submit'])){
+if (isset($_POST['signup-submit'])){
         
         $username = $_POST['uid'];
         $email = $_POST['mail'];
@@ -71,7 +71,7 @@ if (isset($_SESSION['userId']) && isset($_POST['signup-submit'])){
 }
 
 else {
-    header("Location: ../index.php");
+    header("Location: ../signup.php");
     exit();
 }
 

@@ -24,13 +24,13 @@
 </head>
  <!-- juiste login inc code -->
 <?php 
-if(isset($_POST['login-submit']))
-{
+//if(isset($_POST['login-submit']))
+//{
 
-    require'dbh.inc.php';
-
+    require'dhb.inc.php';
     $mailuid = $_POST['mailuid'];
     $password= $_POST['pwd'];
+    var_dump($_POST);
 
     if(empty($mailuid) || empty($password)){
         header("Location: ../index.php?link=overmij");
@@ -50,7 +50,7 @@ if(isset($_POST['login-submit']))
                         mysqli_stmt_execute($stmt);
                         $result = mysqli_stmt_get_result($stmt);}
 
-                        if($row = mysqli_fetch_assoc($result))
+                        if ($row = mysqli_fetch_assoc($result))
                         {
                             $pwdCheck = password_verify($password, $row['pwdUsers']);
                             if ($pwdCheck == false)
@@ -81,7 +81,7 @@ if(isset($_POST['login-submit']))
 
           }
 
-  }
+//  }
 
 
 
@@ -129,13 +129,7 @@ if(isset($_POST['login-submit']))
                                     <button  class="btn btn-secondary btn-sm" type="submit" name="logout-submit">
                                     <a href="http://localhost/nathaliejochems/index.php?link=overmij" target="_parent ">Logout
                                                                                 
-                                            <?php
-                                            // remove all session variables
-                                            session_unset();
-
-                                            // destroy the session
-                                            session_destroy();
-                                            ?>
+                                 
                                             </a>
                                     </button>
                                     </form>
